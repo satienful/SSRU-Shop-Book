@@ -10,7 +10,7 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText nameEditText, surnameEditText,
             userEditText, passwordEditText;
     private String nameString, surnameString,userString, passwordString;
-
+    private static final String urlUpload = "http://swiftcodingthai.com/ssru/add_user_satien.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +37,11 @@ public class SignUpActivity extends AppCompatActivity {
             myAlert.myDialg(this,"มีช่องว่าง","กรุณากรอกทุกช่อง คะ");
         } else {
             //no Space
+            uploadNewUser();
         }
+
+    }   //ClickSing
+    private void uploadNewUser() {
 
     }
 
