@@ -16,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Request Sqlite
         myManage = new MyManage(MainActivity.this);
+
+        //Test Add Value To SQLite
+        myManage.addNewUser("name", "sur", "user", "pass","money");
+
     }   // Main Method
 
     public void clickSignUpMain(View view){
